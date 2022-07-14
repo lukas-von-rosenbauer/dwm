@@ -849,8 +849,8 @@ void drawbar(Monitor * m)
 			//                   SchemeNorm]);
 			drw_setscheme(drw, scheme[SchemeNorm]);
 			int len = strlen(m->sel->name);
-			int pad = 1920 / 2 - len * 4 - x;
-			drw_text(drw, (1920 - len * 8) / 2 - pad, 0,
+			int pad = m->mw / 2 - len * 4 - x;
+			drw_text(drw, (m->mw - len * 8) / 2 - pad, 0,
 				 w - x, bh, pad, m->sel->name, 0);
 			if (m->sel->isfloating)
 				drw_rect(drw, x + boxs, boxs, boxw, boxw,

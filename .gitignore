@@ -1,0 +1,8 @@
+*.old
+*.rej
+*.orig
+*.c~
+*.o
+
+dwm
+dwm.png
